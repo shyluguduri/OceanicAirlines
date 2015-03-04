@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+	<head>
+		<style type="text/css">
+		.heds{
+			font-size: 55px;
+			font-family: fantasy;
+			color: white;	
+			font-variant: normal;
+		}
+		.im1{
+			width: 100px;
+
+		}
+		a{
+			text-decoration: none;
+		}
+		div{
+			text-align: center;
+			padding-top: 90px;
+		}
+		body{
+			background-image: url('bg.jpg');
+			background-repeat: repeat-y;
+		}
+		#fdiv ul { 
+		    padding: 90px 0 0; /* Remove default but add 40px to top */ 
+		    margin: 1%; /* Remove default */ 
+		    list-style: none; 
+			margin-bottom:0;
+		    width: 98%; 
+		    overflow: hidden; /* So it 'contains' the floated <li> elements */ 
+		}
+		#fdiv ul li {
+		    text-align:center;
+		    float: left; 
+		    min-height: 50px; 
+		    width: 18%; /* 6 items means 20% each */ 
+			margin:auto 1%;
+		    position: relative; 
+		}
+		li{
+		    -moz-transition: all .5s ease; /* Firefox 4 */ 
+		    -webkit-transition: all .5s ease; /* Safari and Chrome */ 
+		    -o-transition: all .5s ease; /* Opera */ 
+		    -ms-transition: all .5s ease; /* IE9 (maybe) */ 
+		    transition:all .5s ease; 
+		}
+		#fdiv{
+			border-radius: 20px;
+			border: 2px solid;
+			background-color: grey;
+			width: auto;
+			margin-left: 180px;
+			margin-right: 180px;
+		}
+		li{
+			float: center;
+			display: inline;
+			position: relative;
+			background-color: #98bf21;
+			padding: 15px 50px 15px;
+			height: 25px;
+			text-align: center;
+			border-radius: 10px;
+			border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 0px;
+		}
+		li:hover{
+			height:100px;
+			background: #999; /* Old browsers */ 
+		    color:white;
+		    border:none;
+		    background: #999; 
+			padding: 70px 50px 15px;
+		    background-image: url("logo.png") no-repeat center; /* fallback */ 
+		    background: url("logo.png") no-repeat center, -webkit-gradient(linear, left top, left bottom, from(#6cab26), to(#6ceb86)); /* Saf4+, Chrome */
+		    background: url("logo.png")no-repeat center, -webkit-linear-gradient(top, #999, #FEFEFE); /* Chrome 10+, Saf5.1+ */ 
+		    background: url("logo.png")no-repeat center, -moz-linear-gradient(top, #999, #FEFEFE); /* FF3.6+ */ 
+		    background: url("logo.png")no-repeat center, -ms-linear-gradient(top, #999, #FEFEFE); /* IE10 */ 
+		    background: url("logo.png")no-repeat center, -o-linear-gradient(top, #999, #FEFEFE); /* Opera 11.10+ */ 
+		    background: url("logo.png")no-repeat center, linear-gradient(top, #999, #FEFEFE);
+	    	
+		}
+		li:before{
+			content:"";
+			position:absolute;
+			top:-20px;
+			left:50%;
+			margin-left:-20px;
+			width: 0; 
+			height: 0; 
+			transition:all 0.2s ease;
+			border-left: 20px solid transparent;
+			border-right: 20px solid transparent;
+			border-bottom: 20px solid #F88204;
+		}
+
+		li:hover:before{
+			opacity:0;
+		}
+		.sdiv{
+			border-radius: 20px;
+			border: 2px solid;
+			background-color: white;
+			width: auto;
+			height: 618px;
+			text-align: left;
+			padding: 30px 90px 0px;
+			
+		}
+		.im2{
+			border-radius: 10px;
+			width: 800px;
+			max-height: 300px;
+			
+		}
+		table{
+			width: 100%;
+			text-align: left;
+			padding-left: 35px;
+		}
+		footer{
+			text-align: center;
+		}
+		</style>
+	</head>
+	<body >
+		<div>
+		<header>
+			<img class='im1' src="logo.png">
+			<a class='heds'>Oceanic Airlines</a>
+			
+		</header>
+		</div>
+		<div id='fdiv'>
+			
+			<ol>
+				<li><<a href="#">Home</a></li>
+				<li><a href="#">Upcoming Flights</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Travel Guide</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ol>
+		
+		<div class='sdiv'>
+			<img class='im2' src="003.jpg">
+			<p> Welcome!</p>
+			<p>Experience the fun and adventure of a destination unlike any other! Regardless of what you have in mind, we promise you a trip you'll never forget. Enjoy it all with (at least) two extra nights free!</p>
+			<table>
+			<tr>
+				<th>For Standard Travelers</th>
+				<th>For "Others"</th>
+			</tr>
+			<tr>
+				<td><a href="#">Standard seating chart </a></td>
+				<td><a href="#">Effect of electromagnetism on travelers </a></td>
+			</tr>
+			<tr>
+				<td><a href="#">Find out why our flights are so unique </a></td>
+				<td><a href="#">Flying with animals</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">Read our insurance policy</a></td>
+				<td><a href="#">Non-Smoking policy</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">Join our frequent flyer club</a></td>
+				<td><a href="#">More Travel Resources...</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">More Travel Resources...</a></td>
+				<td><a href="#"></a></td>
+			</tr>
+			</table>
+		</div>
+		</div>
+		<footer>
+			<p>Copyright &copy Oceanic Airlines</p>
+			<p>Phone:481-516-2342|<a href="#">info@oceanicairlines.air</a></p>
+
+		</footer>
+	</body>
+</html>
